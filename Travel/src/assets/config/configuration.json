@@ -1,0 +1,16 @@
+{
+  "BestDestination": [
+    {
+      "name": "Maldives",
+      "images": ["../../../assets/Images/maldives-1.jpg", "../../../assets/Images/maldives-3.jpg"]
+    },
+    {
+      "name": "Ladhak",
+      "images": ["../../../assets/Images/ladhak-1.jpg", "../../../assets/Images/ladhak-3.jpg"]
+    },
+    {
+      "name": "Kerala",
+      "images": ["../../../assets/Images/kerala-5.jpg", "../../../assets/Images/kerala-2.jpg"]
+    }
+  ]
+}

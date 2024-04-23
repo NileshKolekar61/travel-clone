@@ -1,0 +1,131 @@
+<section class="section-1">
+  <p class="heading d-flex justify-content-center">Travel With Bag Packer</p>
+</section>
+
+<section class="section-2">
+  <div class="features">
+    <div class="features-sub">
+      <div>
+        <img src="../../../assets/Images/beach.svg" alt="">
+      </div>
+      <div class="features-sec-sub">
+        <p class="sec-first">Top Destinations</p>
+        <p class="sec-second">Uncover the world's top destinations </p>
+      </div>
+    </div>
+    <div class="features-sub">
+      <div>
+        <img src="../../../assets/Images/wallet.svg" alt="">
+      </div>
+      <div class="features-sec-sub">
+        <p class="sec-first">The Best Prices</p>
+        <p class="sec-second">Unlock top deals and discover The Best Prices. </p>
+      </div>
+    </div>
+    <div class="features-sub">
+      <div>
+        <img src="../../../assets/Images/suitcase.svg" alt="">
+      </div>
+      <div class="features-sec-sub">
+        <p class="sec-first">Amazing Services</p>
+        <p class="sec-second">Experience excellence with our best Services </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="horizontal-line"></div>
+
+  <div class="popular-dest">
+    <p>SIMPLY AMAZING PLACES</p>
+    <p>Popular Destinations</p>
+    <div class="polular-dest-img-cont">
+      <div class="destination-inner" *ngFor="let dest of Destinations">
+        <div class="dest-img">
+          <img [src]="dest.images[0]" alt="">
+        </div>
+        <div class="dest-img">
+          <img [src]="dest.images[1]" alt="">
+        </div>
+        <p class="dest-name">{{dest.name}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-3">
+  <div class="testimonials-container">
+    <div class="testimonials-inner">
+      <img class="user1" src="../../../assets/Images/user.png" alt="">
+      <p class="user-perspective">"Absolutely amazing experience! From the moment I started browsing for destinations to
+        the seamless booking
+        process and checkout, everything was flawless. The attention to detail and customer support were outstanding.
+        Highly recommend!"</p>
+      <p class="user-name user-name-1">-John D.</p>
+    </div>
+    <div class="testimonials-inner">
+      <img src="../../../assets/Images/user.png" alt="">
+      <p class="user-perspective">"I can't say enough good things about bag packer. From their user-friendly website to
+        their incredible
+        customer service, every aspect of my experience was exceptional. Their amazing services truly exceeded my
+        expectations."</p>
+      <p class="user-name">-Sarah M.</p>
+    </div>
+    <div class="testimonials-inner">
+      <img src="../../../assets/Images/user.png" alt="">
+      <p class="user-perspective">"These are just a few examples of the positive feedback we receive from our valued
+        customers. Join the ranks of
+        happy travelers and experience the difference with bag packer. Explore our website and start planning your dream
+        getaway today!"</p>
+      <p class="user-name">-David Chen.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-4">
+  <div class="upcomming-trips">
+    <div class="row">
+      <p class="upcomming-heading">Our Upcomming Trips!</p>
+      <div class="col-8 upcomming-container">
+        <div class="upcomming-inner row">
+          <div class="upm-img col-4">
+            <img src="../../../assets/Images/rajasthan-1.jpg" alt="">
+          </div>
+          <div class="upm-content col-8">
+            <span class="upcomming-date">{{ rajsthanDate | date:'dd' }}</span><span class="upcomming-month">{{currentMonthPlusOne}}</span>
+            <p class="upcomming-place">Rajsthan</p>
+            <p class="upcomming-place-info">Experience the vibrant colors and rich heritage of Rajasthan, where every
+              corner tells a story of royalty and splendor</p>
+          </div>
+        </div>
+        <div class="upcomming-inner row">
+          <div class="upm-img col-4">
+            <img src="../../../assets/Images/switzerland-2.jpg" alt="">
+          </div>
+          <div class="upm-content col-8">
+            <span class="upcomming-date">{{ SwitzerlandDate | date:'dd' }}</span><span class="upcomming-month">{{currentMonthPlusOne}}</span>
+            <p class="upcomming-place">Switzerland</p>
+            <p class="upcomming-place-info">Discover the breathtaking beauty of Switzerland, where majestic mountains,
+              crystal-clear lakes, and charming villages await your exploration.</p>
+          </div>
+        </div>
+        <div class="upcomming-inner row">
+          <div class="upm-img col-4">
+            <img src="../../../assets/Images/manali-1.jpg" alt="">
+          </div>
+          <div class="upm-content col-8">
+            <span class="upcomming-date">{{ ManaliDate | date:'dd' }}</span><span class="upcomming-month">{{currentMonthPlusOne}}</span>
+            <p class="upcomming-place">Manali</p>
+            <p class="upcomming-place-info">Embark on an adventure to Manali, where snow-capped peaks, lush valleys, and
+              serene landscapes create an unforgettable retreat in the heart of the Himalayas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 descount-container">
+        <img src="../../../assets/Images/discount.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

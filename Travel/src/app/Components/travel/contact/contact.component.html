@@ -1,0 +1,31 @@
+<section class="section-1">
+  <div>
+    <p class="text-center heading">Let us take you away</p>
+    <div class="send-enquiry text-center">
+      <h2>Send enquiry of your trip</h2>
+      <form [formGroup]="sendEnquiry" (submit)="SendEnquiry()">
+        <div>
+          <input type="text" placeholder="From" formControlName="from-city">
+          <input type="text" placeholder="To" formControlName="to-city">
+        </div>
+        <div>
+          <input type="text" placeholder="Enter Budget" formControlName="budget">
+          <select formControlName="route">
+            <option value="">Select an option</option>
+            <option value="Any">Any</option>
+            <option value="Train">Train</option>
+            <option value="By Road">By Road</option>
+            <option value="Plane">Plane</option>
+          </select>
+        </div>
+        <div>
+          <input type="date" placeholder="From Date" formControlName="from-date">
+          <input type="date" placeholder="To Date" formControlName="to-date">
+        </div>
+        <div>
+          <button>Send Enquiry</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
